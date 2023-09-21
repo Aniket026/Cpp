@@ -1,0 +1,72 @@
+#include<iostream>
+using namespace std; 
+  
+class PrepInsta 
+{ 
+private: 
+    string name;
+    int age;
+  
+public:
+    // Parameterized Constructor declaration
+    PrepInsta(string name, int age);
+    
+    string getName(){ 
+        return name; 
+    }
+    int getAge(){ 
+        return age; 
+    } 
+    
+};
+// declaration outside class
+PrepInsta::PrepInsta(string val1, int val2)// Parameterized Constructor 
+{ 
+        name = val1;
+        age = val2;
+} 
+
+int main() 
+{ 
+    // Paramterized Constructor called
+    PrepInsta obj("John Snow", 25);
+    
+    cout << "Name: " << obj.getName() << "\nAge: " << obj.getAge(); 
+  
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#include<iostream>
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class Student {
+    public:
+    int roll_no;
+    string st_name;
+    float weight;
+
+    Student (int num, string name, float w){
+        roll_no = num;
+        st_name = name;
+        weight = w;
+    }
+
+    void display (){
+        cout << roll_no << " " << st_name << " " << weight << endl;
+    }
+};
+
+int main(void) {
+    Student s1 = Student(1, "Karen", 91.1);
+    Student s2 = Student(2, "Phils", 67);
+    
+    s1.display();
+    s2.display();
+    
+    return 0;
+}
