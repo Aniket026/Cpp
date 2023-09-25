@@ -1,0 +1,32 @@
+class Base1{
+protected:
+    int base1int;
+
+public:
+    void set_base1int(int a)
+    {
+        base1int = a;
+    }
+};
+
+class Base2{
+protected:
+    int base2int;
+
+public:
+    void set_base2int(int a)
+    {
+        base2int = a;
+    }
+};
+
+class Base3{
+protected:
+    int base3int;
+
+public:
+    void set_base3int(int a)
+    {
+        base3int = a;
+    }
+};
