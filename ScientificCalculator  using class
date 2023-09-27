@@ -1,0 +1,36 @@
+/*
+Problem Statement :    ScientificCalculator - Takes input of 2 numbers using a utility function and performs any four scientific operations of your choice and displays the results using another function.
+*/
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+class ScientificCalculator{
+    int a, b;
+
+    public:
+        void getDataScientific()
+        {
+            cout << "Enter the value of a" << endl;
+            cin >> a;
+            cout << "Enter the value of b" << endl;
+            cin >> b;
+        }
+
+        void performOperationsScientific()
+        { 
+            cout << "The value of cos(a) is: " << cos(a) << endl;
+            cout << "The value of sin(a) is: " << sin(a) << endl;
+            cout << "The value of exp(a) is: " << exp(a) << endl;
+            cout << "The value of tan(a) is: " << tan(a) << endl;
+        }
+};
+int main()
+{
+   ScientificCalculator calc;
+    calc.getDataScientific();
+    calc.performOperationsScientific();
+
+    
+    return 0;
+}
