@@ -1,0 +1,42 @@
+Problem statement :
+/*
+Create 1 classes:
+    1. SimpleCalculator - Takes input of 2 numbers using a utility function and performs +, -, *, / and displays the results using another function.
+   
+*/
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    
+    return 0;
+}
+#include<iostream>
+using namespace std ;
+class SimpleCalculator {
+    int a, b;
+    public:
+        void getDataSimple()
+        {
+            cout<<"Enter the value of a"<<endl;
+            cin>>a;
+            cout<<"Enter the value of b"<<endl;
+            cin>>b;
+        }
+
+        void performOperationsSimple(){
+            cout<<"The value of a + b is: "<<a + b<<endl;
+            cout<<"The value of a - b is: "<<a - b<<endl;
+            cout<<"The value of a * b is: "<<a * b<<endl;
+            cout<<"The value of a / b is: "<<a / b<<endl;
+        }
+};
+ int main()
+{
+    simpleCalculator cal;
+     cal.getDataSimple();
+     performOperationsSimple();
+    return 0;
+}
