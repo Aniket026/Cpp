@@ -1,6 +1,6 @@
 /*tital : Initialization list in constructor*/
 
-#include<iostream>
+#include<iostream> 
 usng namespace std;
 class Test
 {
